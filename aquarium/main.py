@@ -12,11 +12,13 @@ aquarium.remove_fat_fishes()
 
 # creating fishes
 clownfish_1 = Clownfish("Laughy", 9, "orange", "white")
+clownfish_2 = Clownfish("Funny", 10, "yellow", "pink")
 tong_1 = Tang("Dumby", 7, "blue")
 kong_1 = Kong("Fatty", 18, "grey")
 
 # adding fishes to the aquarium
 aquarium.add_fish(clownfish_1)
+aquarium.add_fish(clownfish_2)
 aquarium.add_fish(tong_1)
 aquarium.add_fish(kong_1)
 
