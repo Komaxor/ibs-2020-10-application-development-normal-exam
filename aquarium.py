@@ -20,4 +20,4 @@ class Aquarium:
 
     def get_status(self):
         for fish in self.fishes:
-            fish.get_status()
+            print(fish.status())
