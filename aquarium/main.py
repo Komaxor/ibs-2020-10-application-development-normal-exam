@@ -24,13 +24,13 @@ aquarium.add_fish(kong_1)
 
 
 def test_feeding():
-    print("feeding the aquarium:")
+    print("# feeding the aquarium:")
     aquarium.feed()
     print_status()
 
 
 def test_removing():
-    print("removing fat fishes:")
+    print("# removing fat fishes:")
     aquarium.remove_fat_fishes()
     print_status()
 
@@ -39,7 +39,7 @@ def print_status():
     aquarium.get_status()
 
 
-print("Aquarium with fishes:")
+print("# Aquarium with fishes:")
 print_status()
 
 test_feeding()
