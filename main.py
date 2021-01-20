@@ -1,19 +1,28 @@
+from aquarium import Aquarium
 from clownfish import Clownfish
 from tang import Tang
 from kong import Kong
 
-c_fish1 = Clownfish("Laughy", 10, "Orange", "White")
-t_fish1 = Tang("Dumby", 8, "Blue")
-k_fish1 = Kong("Fatty", 18, "Grey")
+aquarium = Aquarium()
 
-c_fish1.get_status()
-t_fish1.get_status()
-k_fish1.get_status()
+clownfish_1 = Clownfish("Laughy", 9, "orange", "white")
+tong_1 = Tang("Dumby", 8, "blue")
+kong_1 = Kong("Fatty", 18, "grey")
 
-c_fish1.feed()
-t_fish1.feed()
-k_fish1.feed()
+aquarium.add_fish(clownfish_1)
+aquarium.add_fish(tong_1)
+aquarium.add_fish(kong_1)
 
-c_fish1.get_status()
-t_fish1.get_status()
-k_fish1.get_status()
+aquarium.get_status()
+
+aquarium.feed()
+
+aquarium.remove_fat_fishes()
+
+aquarium.get_status()
+
+aquarium.feed()
+
+aquarium.remove_fat_fishes()
+
+aquarium.get_status()

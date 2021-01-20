@@ -7,3 +7,4 @@ class Kong(Fish):
         super().__init__(name, weight, colour)
         self.weight_gain = 2
         self.uniqueness = "gains extra weight when fed"
+        self.status = self.set_status()

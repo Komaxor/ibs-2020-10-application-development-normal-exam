@@ -6,9 +6,12 @@ class Fish:
         self.colour = colour
         self.weight_gain = 1
         self.uniqueness = ""
-        self.status = (self.name + ", weight: " + str(self.weight) +
-                       ", colour: " + self.colour + ", " + "uniqueness: " +
-                       self.uniqueness)
+        self.status = ""
+
+    def set_status(self):
+        return (self.name + ", weight: " + str(self.weight) +
+                ", colour: " + self.colour + ", " + "uniqueness: " +
+                self.uniqueness)
 
     def get_status(self):
         print(self.status)

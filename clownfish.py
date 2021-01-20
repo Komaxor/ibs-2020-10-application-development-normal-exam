@@ -7,3 +7,4 @@ class Clownfish(Fish):
         super().__init__(name, weight, colour)
         self.stripe_colour = stripe_colour
         self.uniqueness = "striped with " + self.stripe_colour
+        self.status = self.set_status()
